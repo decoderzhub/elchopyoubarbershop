@@ -36,13 +36,13 @@ const Hero: React.FC<HeroProps> = ({
             {title}
           </h1>
           <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-8">{subtitle}</p>
-          <Button 
+          <button 
             className="booksync-button"
             data-business="elchopyoubarbershop"
             data-apikey="bk4n_RImZGh14L7LqFdO3lH5MZw4ajuYFF3E0"
           >
             {ctaText}
-          </Button
+          </button>
         </motion.div>
       </div>
       

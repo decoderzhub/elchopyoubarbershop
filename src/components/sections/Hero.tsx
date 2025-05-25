@@ -14,7 +14,6 @@ const Hero: React.FC<HeroProps> = ({
   title,
   subtitle,
   ctaText = 'Book Appointment',
-  ctaLink = 'https://booksy.com/en-us/926960_el-chop-you-barbershop_barber-shop_15992_seminole#ba_s=seo',
   bgImage = 'https://images.pexels.com/photos/1570807/pexels-photo-1570807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750'
 }) => {
   return (

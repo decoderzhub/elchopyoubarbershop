@@ -6,7 +6,8 @@ type HeroProps = {
   title: string;
   subtitle: string;
   ctaText?: string;
-  ctaLink?: string;
+  businessSlug?: string;
+  apiKey?: string;
   bgImage?: string;
 };
 
@@ -14,9 +15,12 @@ const Hero: React.FC<HeroProps> = ({
   title,
   subtitle,
   ctaText = 'Book Appointment',
-  ctaLink = 'https://booksy.com/en-us/926960_el-chop-you-barbershop_barber-shop_15992_seminole#ba_s=seo',
+  businessSlug = 'elchopyoubarbershop',
+  apiKey = 'bk4n_RImZGh14L7LqFdO3lH5MZw4ajuYFF3E0',
   bgImage = 'https://images.pexels.com/photos/1570807/pexels-photo-1570807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750'
 }) => {
+  const ctaLink = `https://bookme4now.com/${businessSlug}/booking?apiKey=${apiKey}`;
+
   return (
     <div 
       className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden"
@@ -49,4 +53,4 @@ const Hero: React.FC<HeroProps> = ({
   );
 };
 
-export default Hero
+export default Hero;

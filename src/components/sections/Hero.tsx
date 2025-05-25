@@ -6,6 +6,7 @@ type HeroProps = {
   title: string;
   subtitle: string;
   ctaText?: string;
+  ctaLink?: string;
   bgImage?: string;
 };
 
@@ -13,6 +14,7 @@ const Hero: React.FC<HeroProps> = ({
   title,
   subtitle,
   ctaText = 'Book Appointment',
+  ctaLink = 'https://booksy.com/en-us/926960_el-chop-you-barbershop_barber-shop_15992_seminole#ba_s=seo',
   bgImage = 'https://images.pexels.com/photos/1570807/pexels-photo-1570807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750'
 }) => {
   return (
@@ -36,13 +38,9 @@ const Hero: React.FC<HeroProps> = ({
             {title}
           </h1>
           <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-8">{subtitle}</p>
-          <button 
-            className="booksync-button"
-            data-business="elchopyoubarbershop"
-            data-apikey="bk4n_RImZGh14L7LqFdO3lH5MZw4ajuYFF3E0"
-          >
-            {ctaText}
-          </button>
+          <a href={ctaLink} target="_blank" rel="noopener noreferrer">
+            <Button variant="primary" size="lg">{ctaText}</Button>
+          </a>
         </motion.div>
       </div>
       
@@ -51,4 +49,4 @@ const Hero: React.FC<HeroProps> = ({
   );
 };
 
-export default Hero;
+export default Hero

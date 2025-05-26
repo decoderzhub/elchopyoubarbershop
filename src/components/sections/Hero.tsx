@@ -16,7 +16,7 @@ const Hero: React.FC<HeroProps> = ({
   subtitle,
   ctaText = 'Book Appointment',
   businessSlug = 'elchopyoubarbershop',
-  apiKey = 'bk4n_RImZGh14L7LqFdO3lH5MZw4ajuYFF3E0',
+  apiKey = 'bk4n_dOtNNaI4FF6lCkg9KhhhBZCd8dq1wvfk',
   bgImage = 'https://images.pexels.com/photos/1570807/pexels-photo-1570807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750'
 }) => {
   const ctaLink = `https://bookme4now.com/${businessSlug}/booking?apiKey=${apiKey}`;

@@ -4,30 +4,23 @@ export const services: Service[] = [
   {
     id: 1,
     name: "Haircut Only",
-    price: "$30",
-    duration: "45 mins",
+    price: "$35",
+    duration: "30 mins",
     description: "Classic haircut service including a consultation, wash, cut, and style."
   },
   {
     id: 2,
-    name: "MVP Haircut",
-    price: "$40",
-    duration: "1 hr",
-    description: "Premium haircut experience with enhanced attention to detail, hot towel, and styling."
-  },
-  {
-    id: 3,
     name: "Haircut & Beard",
-    price: "$40",
-    duration: "1 hr",
+    price: "$45",
+    duration: "45 mins",
     description: "Complete grooming package with haircut and beard trim for a polished look."
   },
   {
-    id: 4,
-    name: "Beard Detail Only",
-    price: "$10",
+    id: 3,
+    name: "Edge/Line Up",
+    price: "$20",
     duration: "20 mins",
-    description: "Precise beard trim and shaping to maintain your style."
+    description: "Precise edge and lineup to maintain your style."
   },
   {
     id: 5,

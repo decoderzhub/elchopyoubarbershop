@@ -52,7 +52,6 @@ const Services: React.FC = () => {
                 </p>
               </div>
               
-              
               <div className="mb-8">
                 <h3 className="text-xl font-heading font-bold mb-3">Braiding Services</h3>
                 <p className="text-barber-gray-600 mb-4">
